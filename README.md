@@ -1,3 +1,8 @@
+Anson:
+I fixed serval issues when copying playlists from AppleMusic to Youtube-Music.
+Currently the query time for Youtube-Music is set to 1sec, which is safe IMO.
+
+---
 ![Sound-tunnel gif](sound--tunnel.gif)
 # Sound-tunnel
 Python3 script to transfer playlists across Spotify, Tidal, AppleMusic and Youtube-Music
