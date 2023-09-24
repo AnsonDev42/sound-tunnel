@@ -82,7 +82,6 @@ def move_to_ytmusic(ytmusic, playlist_info, dest_id):
         try:
             for idx in range(tmp, len(playlist_info)):
                 i = playlist_info[idx]
-                tmp = idx+1
                 if i == playlist_info[-1]:
                     flag = 0
                 i = i.replace("&", " ")
@@ -99,5 +98,7 @@ def move_to_ytmusic(ytmusic, playlist_info, dest_id):
                     not_found.append(i)
         except Exception:
             print(f"not found/search error:{i}")
+            tmp = idx+1
+
             # return not_found
     return not_found
